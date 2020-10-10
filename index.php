@@ -34,7 +34,7 @@
 
 <div class="user_info" data-userid="<?php echo $session; ?>" data-sessionid="<?php echo $session; ?>" data-username="<?php echo $universal->getUsernameFromSession(); ?>"></div>
 
-<div class="overlay"></div>
+<div class="overlay"></div> 
 <div class="notify"><span></span></div>
 <div class="badshah">
   <?php include_once 'ajaxify/home/home.php'; ?>

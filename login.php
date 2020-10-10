@@ -36,9 +36,9 @@
   </div> -->
   
     
-
+  
   <div class="input_wrapper">
-    <div class="signin-image">
+    <div>
       <figure><img src="https://i.ibb.co/7kbsk0h/output-onlinepngtools.png" alt="sing up image"></figure>
     </div>
     <div class="display_text">
@@ -54,9 +54,15 @@
           </span>
         </div>
         <input type="password" name="s_password" value="" autocomplete="off" placeholder="Password" id="login_password" class="s_password big_input" required maxlength="32">
-        <!-- <span class="show_psswrd log_show_psswrd" id="show_psswrd">
+        <div>
+          <span class="show_psswrd log_show_psswrd" id="show_psswrd">
           <i class="fa fa-lock" aria-hidden="true"></i>
-        </span> -->
+        </span>
+        </div>
+        
+        
+        <input type="checkbox" id="s_terms" name="s_terms" class="s_terms" >
+        <label for="s_terms" class="terms"> Remember me</label>
         <input type="submit" name="s_submit" value="Log in to continue" class="s_submit">
       </form>
       <div class="forgot_psswrd">

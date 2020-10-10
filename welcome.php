@@ -26,7 +26,7 @@
 
   <div class="index_sign log_sign">
     <a href="signup" class="pri_btn">Need an account?</a>
-  </div>
+  </div> 
 
 
   <div class="banner">

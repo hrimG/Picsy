@@ -16,5 +16,23 @@
 <noscript>
   <?php include 'needs/sec_no_script.php'; ?>
 </noscript>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+<script>
+    const threshold = 0.9;
+    let model;
+    toxicity.load(threshold).then(m => {
+        model = m;
+    }).then(()=>{
+        document.querySelectorAll("input").forEach(input=>{
+            input.addEventListener("input",(event)=>{
+                if(event.data === " ")
+                model.classify([input.value]).then(predictions => {
+                    if(predictions[6].results[0].match) input.value = "";
+                });
+            })
+        })
+    });
+</script>
 </body>
 </html>

@@ -50,6 +50,12 @@
         </a>
       </li>
       <li class="m_n_li">
+        <a href="<?php echo DIR; ?>/profile/<?php echo $universal->getUsernameFromSession(); ?>?ask=games" class="m_n_a games" data-link="games">
+          <span class="m_n_text">Games</span>
+          <span class="m_n_new"></span>
+        </a>
+      </li>
+      <li class="m_n_li">
         <a href="<?php echo DIR; ?>/profile/<?php echo $universal->getUsernameFromSession(); ?>?ask=groups" class="m_n_a groups" data-link="groups">
           <!-- <span class="m_n_icon"><i class="material-icons">message</i></span> -->
           <span class="m_n_text">Groups</span>

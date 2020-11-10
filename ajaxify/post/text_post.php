@@ -69,3 +69,33 @@
       <a href="#" class="p_post">Post</a>
     </div>
   </div>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+<script>
+    toxicity.load(threshold).then(m => {
+        model = m;
+    }).then(()=>{
+        document.querySelectorAll("input").forEach(input=>{
+            input.addEventListener("input",(event)=>{
+                if(event.data === " ")
+                model.classify([input.value.toLowerCase()]).then(predictions => {
+                    if(predictions[6].results[0].match){
+                        input.value = "";
+                        alert('Abusive word detected!');
+                    }
+                });
+            })
+        });
+        document.querySelectorAll("textarea").forEach(input=>{
+            input.addEventListener("input",(event)=>{
+                if(event.data === " ")
+                model.classify([input.value.toLowerCase()]).then(predictions => {
+                    if(predictions[6].results[0].match){
+                      input.value = "";
+                      alert('Abusive word detected!');
+                    }
+                });
+            })
+        })
+    });
+</script>

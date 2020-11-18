@@ -9,6 +9,17 @@ let imgDogEarRight, imgDogEarLeft, imgDogNose; // Dog Face Filter
 
 let selected = -1; // Default no filter
 
+function capture() {
+  var canvas = document.querySelectorAll('canvas')[1];     
+  var image = canvas.toDataURL();  
+  var tmpLink = document.createElement( 'a' );  
+  tmpLink.download = 'image.png';
+  tmpLink.href = image;
+  document.body.appendChild( tmpLink );  
+  tmpLink.click();  
+  document.body.removeChild( tmpLink ); 
+}
+
 /*
  * **p5.js** library automatically executes the `preload()` function. Basically, it is used to load external files. In our case, we'll use it to load the images for our filters and assign them to separate variables for later use.
 */
@@ -50,6 +61,9 @@ function setup()
   }
   sel.changed(applyFilter);
 
+  button = createButton('Capture');
+  button.mousePressed(capture);
+  button.addClass('btn btn-info');
   // tracker
   faceTracker = new clm.tracker();
   faceTracker.init();
@@ -130,3 +144,11 @@ function windowResized()
   outputHeight = maxWidth * 0.75; // 4:3
   resizeCanvas(outputWidth, outputHeight);
 }
+
+let sketch = function(p) {
+  p.setup = setup;
+  p.preload = preload;
+  p.windowResized = windowResized;
+  p.draw = draw;
+};
+new p5(sketch, document.querySelector(".badshah"));

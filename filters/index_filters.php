@@ -27,24 +27,13 @@
     include '../index_include/index_header.php';
   }
 ?>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clmtrackr@1.1.2/build/clmtrackr.min.js"></script>
+<script src="main_filters.js"></script>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/clmtrackr@1.1.2/build/clmtrackr.min.js"></script>
-  <script src="main_filters.js"></script>
-  <button onclick="capture()">Capture</button>
+  <div class="badshah">
+  </div>
 </body>
-<script>
-    function capture() {
-        var canvas = document.querySelector('canvas');     
-        var image = canvas.toDataURL();  
-        var tmpLink = document.createElement( 'a' );  
-        tmpLink.download = 'image.png';
-        tmpLink.href = image;
-        document.body.appendChild( tmpLink );  
-        tmpLink.click();  
-        document.body.removeChild( tmpLink ); 
-    }
-</script>
 <style>
   canvas {
     display: inline;

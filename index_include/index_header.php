@@ -5,7 +5,7 @@
     <title><?php echo $title; ?></title>
     <meta name="keywords" content=<?php echo $keywords; ?>>
     <meta name="description" content=<?php echo $desc; ?>>
-    <meta name="author" content="Instagram, Faiyaz Shaikh">
+    <meta name="author" content="Instagram">
     <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">

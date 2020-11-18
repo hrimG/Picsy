@@ -56,6 +56,12 @@
         </a>
       </li>
       <li class="m_n_li">
+        <a href="/ParekaFox/Instagram-clone/filters/index_filters.php" class="m_n_a filters" data-link="filters">
+          <span class="m_n_text">Filters</span>
+          <span class="m_n_new"></span>
+        </a>
+      </li>
+      <li class="m_n_li">
         <a href="<?php echo DIR; ?>/profile/<?php echo $universal->getUsernameFromSession(); ?>?ask=groups" class="m_n_a groups" data-link="groups">
           <!-- <span class="m_n_icon"><i class="material-icons">message</i></span> -->
           <span class="m_n_text">Groups</span>

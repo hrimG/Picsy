@@ -29,17 +29,17 @@
 
     <div class="c_g_div grp_c_grp inst">
       <span>Connect 4</span>
-      <a href="/ParekaFox/Instagram-clone/games/connect4/index.html" class="sec_btn c_g">Play now</a>
+      <a href="/ParekaFox/Instagram-clone/games/connect4/index.html" class="btn btn-info c_g">Play now</a>
     </div>
 
     <div class="c_g_div grp_c_grp inst">
       <span>Tic-Tac-Toe</span>
-      <a href="/ParekaFox/Instagram-clone/games/TicTacToe/index.html" class="sec_btn c_g">Play now</a>
+      <a href="/ParekaFox/Instagram-clone/games/TicTacToe/index.html" class="btn btn-info c_g">Play now</a>
     </div>
 
     <div class="c_g_div grp_c_grp inst">
       <span>Chain Reaction</span>
-      <a href="http://localhost:5000/" class="sec_btn c_g">Play now</a>
+      <a href="http://localhost:5000/" class="c_g btn btn-info">Play now</a>
     </div>
 
   </div>

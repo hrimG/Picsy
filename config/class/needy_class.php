@@ -5,8 +5,8 @@
     public static $e;
     public static $database;
     public static $DIR = "/ParekaFox/Instagram-clone";
-    public static $GMAIL = "shuttler2000@gmail.com";
-    public static $GMAIL_PASSWORD = "Badminton2000<3";
+    public static $GMAIL = " "; // enter email id here
+    public static $GMAIL_PASSWORD = " ";
 
     public static function _DB(){
       try {
